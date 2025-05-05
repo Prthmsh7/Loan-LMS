@@ -1,0 +1,61 @@
+name: loan_admin
+description: "Admin portal for loan service application."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  
+  # UI Components
+  flutter_svg: ^2.0.10+1
+  percent_indicator: ^4.2.3
+  fl_chart: ^0.60.0
+  data_table_2: ^2.5.10
+  font_awesome_flutter: ^10.8.0
+  
+  # Utils
+  intl: ^0.18.1
+  shared_preferences: ^2.2.2
+  http: ^1.2.1
+  image_picker: ^1.0.7
+  
+  # State Management
+  get: ^4.6.6
+  
+  # Firebase
+  firebase_core: ^2.15.1
+  firebase_auth: ^4.7.3
+  cloud_firestore: ^4.8.5
+  firebase_storage: ^11.2.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.13.1
+
+# Flutter app icon configuration
+flutter_launcher_icons:
+  android: "ic_launcher"
+  ios: true
+  image_path: "assets/icons/admin_icon.png"
+  min_sdk_android: 21
+  remove_alpha_ios: true
+  web:
+    generate: false
+  windows:
+    generate: false
+  macos:
+    generate: false
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/images/
+    - assets/icons/ 
